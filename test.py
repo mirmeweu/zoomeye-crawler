@@ -113,8 +113,8 @@ if __name__ == '__main__':
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     client = ZoomEyeClient()
-    encrypted_password = '"6OP6nY5/bJOV3EcJCBw9Z/3Zjb42/EJ3yit4tZbcvF/xlm7QCVXq5z40wz9PAuREbqyfNOJzOmAH+z4b181w0p5PeVd+lkva0aBeSBnUAcs1J4QOBfNT3eCMcAeKN9TIQ6cgG0nI6l0sinr6MJ5UrIvU89xJnUTeSiT5BFMSMjeLzp8KLycVS5TMm4q1wVf0"'  # RSA+Base64 пароль, как ждёт ZoomEye
-    auth_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImlsbmF6bWlya2FzaW1vdkBnbWFpbC5jb20iLCJlbWFpbCI6ImlsbmF6bWlya2FzaW1vdkBnbWFpbC5jb20iLCJleHAiOjE3NTg4MTIyMjguMH0.fkrI6gN5hbaDF70eEGjOd6SgRLgBe-ClIz09u61gvu8'           # ваш Cube-Authorization JWT токен
+    encrypted_password = '"<change_this>"'  # RSA+Base64 пароль, как ждёт ZoomEye
+    auth_token = '<change_this>'           # ваш Cube-Authorization JWT токен
 
     if client.login(encrypted_password):
         print("\n[+] Авторизация успешна. Можно вводить поисковые запросы.\n")
